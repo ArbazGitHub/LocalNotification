@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tech.localnotofication.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/etNotiTitile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/write_your_text_here" />
+
+            <EditText
+                android:id="@+id/etNotiMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/write_your_text_here" />
+
+            <Button
+                android:id="@+id/btnSimpleNoti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_simple_notification" />
+
+            <Button
+                android:id="@+id/btnExpandNoti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_expand_layout_notification" />
+
+            <Button
+                android:id="@+id/btnWithActionButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_notification_with_action_buttons" />
+
+            <Button
+                android:id="@+id/btnMaxPriority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_max_priority_notification" />
+
+            <Button
+                android:id="@+id/btnMinPriority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_min_priority_notification" />
+
+            <Button
+                android:id="@+id/btnCombine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/send_combined_notification" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
